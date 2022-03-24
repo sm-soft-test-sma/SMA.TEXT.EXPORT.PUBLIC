@@ -1,0 +1,97 @@
+table_name: ms.dataset
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "-- Note: Unless you save your query, these tabs will NOT persist if you clear\
+  \ your cookies or change browsers.\n\nSELECT repository_name,\n       url,\n   \
+  \    branch,\n       repository.repo_creation AS created,\n       git_name AS main_contributor,\n\
+  \       is_archive\nFROM repository\nLEFT JOIN contributors c on c.id = repository.main_contributor_id\n\
+  WHERE repository_name LIKE 'MS.%' AND is_archive IS NOT NULL\nORDER BY branch, created\
+  \ DESC"
+params: null
+template_params: null
+filter_select_enabled: false
+fetch_values_predicate: null
+extra: null
+uuid: 489f35b5-e936-42d1-92e5-bdd1444b69fd
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: count(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: created
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: is_archive
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOL
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: main_contributor
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: repository_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: branch
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: url
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 74e01916-c333-4c09-9c76-2361aa265449

@@ -1,0 +1,130 @@
+dashboard_title: MS DASHBOARD NEW
+description: null
+css: ''
+slug: null
+uuid: cf53b409-2e63-44f0-ac70-0cd48cbd7c2e
+position:
+  CHART-hD-_WYC8uU:
+    children: []
+    id: CHART-hD-_WYC8uU
+    meta:
+      chartId: 16
+      height: 62
+      sliceName: MS CONTRIBUTOR PIE
+      sliceNameOverride: "\u0421\u0410\u041C\u042B\u0419 \u041A\u0420\u0410\u0421\u0418\
+        \u0412\u042B\u0419 \u0427\u0410\u0420\u0422"
+      uuid: 6eb80b4a-6656-4eee-9d7c-756a3cedf5fc
+      width: 11
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    - TAB-Zua6LXogT
+    - ROW-c9iVMuTWQI
+    type: CHART
+  CHART-oGnLT7s3xD:
+    children: []
+    id: CHART-oGnLT7s3xD
+    meta:
+      chartId: 15
+      height: 50
+      sliceName: MS CHART CONTRIBUTOR COUNT
+      sliceNameOverride: "\u0421\u0410\u041C\u042B\u0419 \u041B\u0423\u0427\u0428\u0418\
+        \u0419 \u0427\u0410\u0420\u0422"
+      uuid: 002ae3b5-107b-49d5-933b-a4a2905e0465
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    - TAB-Rs2PdeOnMn
+    - ROW-_HpL6usfjS
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-CQApGse3XL
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: MS DASHBOARD NEW
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-_HpL6usfjS:
+    children:
+    - CHART-oGnLT7s3xD
+    id: ROW-_HpL6usfjS
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    - TAB-Rs2PdeOnMn
+    type: ROW
+  ROW-c9iVMuTWQI:
+    children:
+    - CHART-hD-_WYC8uU
+    id: ROW-c9iVMuTWQI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    - TAB-Zua6LXogT
+    type: ROW
+  TAB-Rs2PdeOnMn:
+    children:
+    - ROW-_HpL6usfjS
+    id: TAB-Rs2PdeOnMn
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: table
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    type: TAB
+  TAB-Zua6LXogT:
+    children:
+    - ROW-c9iVMuTWQI
+    id: TAB-Zua6LXogT
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: pie
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-CQApGse3XL
+    type: TAB
+  TABS-CQApGse3XL:
+    children:
+    - TAB-Rs2PdeOnMn
+    - TAB-Zua6LXogT
+    id: TABS-CQApGse3XL
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  show_native_filters: true
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+  chart_configuration: {}
+version: 1.0.0
